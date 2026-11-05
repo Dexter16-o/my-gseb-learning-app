@@ -38,6 +38,55 @@ export type Lesson = {
 
 export const lessons: Lesson[] = [
   {
+    id: 'matrices-3-1',
+    chapter: '03',
+    title: { en: 'Matrices — Exercise 3.1 Practice', gu: 'શ્રેણિક — સ્વાધ્યાય 3.1 અભ્યાસ' },
+    subtitle: { en: 'Order and entries of a matrix · independently written practice', gu: 'શ્રેણિકનો ક્રમ અને ઘટકો · સ્વતંત્ર રીતે તૈયાર કરેલો અભ્યાસ' },
+    formula: 'A=[a_{ij}]_{m\\times n},\\quad \\text{order}(A)=m\\times n',
+    worked: {
+      question: 'A=\\begin{bmatrix}2&-1&5\\\\0&3&7\\end{bmatrix};\\quad \\text{find order and }a_{23}',
+      steps: {
+        en: [
+          'Count rows: \\(m=2\\).',
+          'Count columns: \\(n=3\\).',
+          'Therefore the order is \\(2\\times3\\).',
+          'The entry \\(a_{23}\\) is in row 2, column 3: \\(a_{23}=7\\).',
+        ],
+        gu: [
+          'હરોળોની સંખ્યા ગણો: \\(m=2\\).',
+          'સ્તંભોની સંખ્યા ગણો: \\(n=3\\).',
+          'આથી શ્રેણિકનો ક્રમ \\(2\\times3\\) છે.',
+          'ઘટક \\(a_{23}\\) બીજી હરોળ અને ત્રીજા સ્તંભમાં છે: \\(a_{23}=7\\).',
+        ],
+      },
+      answer: '\\text{order}(A)=2\\times3,\\quad a_{23}=7',
+    },
+    questions: [
+      {
+        id: 'm31-order',
+        topic: 'Matrix order',
+        prompt: '\\text{Order of }\\begin{bmatrix}1&2\\\\3&4\\\\5&6\\end{bmatrix}',
+        options: ['2\\times3', '3\\times2', '3\\times3', '2\\times2'],
+        correct: 1,
+        explanation: {
+          en: 'There are 3 rows and 2 columns, so the order is 3×2.',
+          gu: 'અહીં 3 હરોળ અને 2 સ્તંભ છે, તેથી ક્રમ 3×2 છે.',
+        },
+      },
+      {
+        id: 'm31-entry',
+        topic: 'Matrix entry',
+        prompt: 'A=\\begin{bmatrix}4&8&1\\\\6&9&2\\end{bmatrix},\\quad a_{12}=?',
+        options: ['4', '8', '6', '9'],
+        correct: 1,
+        explanation: {
+          en: 'a₁₂ means row 1, column 2; its value is 8.',
+          gu: 'a₁₂ એટલે પ્રથમ હરોળ, બીજો સ્તંભ; તેનું મૂલ્ય 8 છે.',
+        },
+      },
+    ],
+  },
+  {
     id: 'integration',
     chapter: '07',
     title: { en: 'Integrals', gu: 'સંકલન' },
